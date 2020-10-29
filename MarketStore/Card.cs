@@ -27,7 +27,7 @@ namespace MarketStore
             //Math.Round(value,2).ToString();
         public void RequiredDataOutput(double valueOfPurchase)
         {
-            double discount =((double)(this.discountRate * 0.01) )* valueOfPurchase;
+            double discount =(this.discountRate * 0.01) * valueOfPurchase;
             Console.WriteLine($"Purchase value: ${formatString(valueOfPurchase)}");
             Console.WriteLine($"Discount rate: {formatString(this.discountRate)}%");
             Console.WriteLine($"Discount: ${formatString(discount)}");
